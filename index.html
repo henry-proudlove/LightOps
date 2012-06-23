@@ -11,77 +11,77 @@
 
   <meta name="viewport" content="width=device-width">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
 
   <script src="js/libs/modernizr-2.5.3.min.js"></script>
 </head>
 <body>
-	<div id="container">
+	<div id="container" class="clearfix">
 		<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-		<header id="site-header">
+		<header id="site-header" class="clearfix">
 			<h1 id="site-title">
 				<a href="index.html" rel="start">LightOps</a>
 			</h1><!--#site-title-->
-			<nav id="site-navigation">
-				<a href="#about" rel="section">About</a>
-				<a href="#project" rel="section">Projects</a>
-				<a href="#contact" rel="section">Contact</a>
-				<a href="#jobs" rel="section">Jobs</a>
-			</nav><!--#site-navigation-->
-			<nav id="social-links">
-				<a href="" rel="section">LinkedIn</a>
-				<a href="" rel="section">Pinterst</a>
-				<a href="" rel="section">Twitter</a>
-				<a href="" rel="section">Facebook</a>
-			</nav><!--#social-links-->
+			<div id="nav-holder">
+				<nav id="social-links">
+					<a href="" class="facebook" rel="section">Facebook</a>
+					<a href="" class="pinterest" rel="section">Pinterst</a>
+					<a href="" class="linkedin" rel="section">LinkedIn</a>
+					<a href="" class="twitter" rel="section">Twitter</a>
+				</nav><!--#social-links-->
+				<nav id="site-navigation">
+					<a href="#about" rel="section">About</a>
+					<a href="#project" rel="section">Projects</a>
+					<a href="#contact" rel="section">Contact</a>
+					<a href="#jobs" class="last" rel="section">Jobs</a>
+				</nav><!--#site-navigation-->
+			<div><!--#nav-holder-->
 		</header><!--#site-header-->
-		<div role="main">
-			<section id="about">
-				<header>
+		<div role="main" id="main" class="clearfix">
+			<section id="about" class="clearfix">
+				<header class="clearfix">
 					<h2 class="sec-header">Who we are</h2>
 				</header>
-				<article>
+				<article class="clearfix">
 					<p>
 						LightOps is young start-up on a mission to innovate. We are a team of creators, developers and thinkers dedicated to conceiving and making things that are beautiful, useful, innovative and fun.
 					</p>
-					<p class="small">
-						<ul>
-							<li>
-								We are driven to make tangible, positive experiences on the Web, iOS, Android and physical platforms.
-							</li>
-							<li>
-								We don't just do things for profit, we do them because we believe they will be useful and better.
-							</li>
-						</ul>
-					</p>
+					<ul class="small clearfix">
+						<li>
+							We are driven to make tangible, positive experiences on the Web, iOS, Android and physical platforms.
+						</li>
+						<li>
+							We don't just do things for profit, we do them because we believe they will be useful and better.
+						</li>
+					</ul>
 				</article>
 			</section><!--#about-->
 			
-			<section id="projects">
+			<section id="projects" class="clearfix">
 				<header>
 					<h2 class="sec-header">Projects</h2>
 				</header>
-				<article>
+				<article class="clearfix">
 					<p>
 						Right now we're working hard to bring an ambitious first project to life. We're being pretty quiet about it while we put all our energies into developing the prototype, so expect us to update the site with details soon.  
 					</p>
 				</article>
 			</section><!--#projects-->
 			
-			<section id="contact">
+			<section id="contact" class="clearfix">
 				<header>
 					<h2 class="sec-header">Contact</h2>
 				</header>
-				<article>
+				<article class="clearfix">
 					<p>
-						<dl>
+						<dl class="clearfix">
 							<dt>For Press, PR or to give us money contact:</dt>
 								<dd>
-									Anson at <a class="mail-link" href="mailto:anson@lightops.org">anson@lightops.org</a>
+									Anson @ <a class="mail-link" href="mailto:anson@lightops.org">anson@lightops.org</a>
 									<a class="phone-link" href="tel:0447966462316">+44 (0) 79664 62316</a>
 								</dd>
 								<dd>
-									Faraaz at <a class="mail-link" href="mailto:faraaz@lightops.org">faraaz@lightops.org</a>
+									Faraaz @ <a class="mail-link" href="mailto:faraaz@lightops.org">faraaz@lightops.org</a>
 									<a class="phone-link" href="tel:0447976883990">+44 (0) 79768 83990</a>
 								</dd>
 						</dl>
@@ -89,14 +89,17 @@
 				</article>
 			</section><!--#projects-->
 			
-			<section id="jobs">
+			<section id="jobs" class="clearfix">
 				<header>
 					<h2 class="sec-header">Jobs</h2>
 				</header>
-				<article>
-					<p>
-						For Jobs, Internships etc, hit us up at <a class="mail-link" href="mailto:jobs@lightops.org">jobs@lightops.org</a>
-					</p>
+				<article class="clearfix">
+					<dl class="clearfix">
+						<dt>For Jobs, Internships etc, hit us up @</dt>
+							<dd>
+								<a class="mail-link" href="mailto:jobs@lightops.org">jobs@lightops.org</a>
+							</dd>
+					</dl>
 				</article>
 			</section><!--#projects-->
 			
