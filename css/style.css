@@ -64,7 +64,29 @@ td { vertical-align: top; }
 
 .chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
 
+/*
+ *
+ * STRUCTURE
+ *
+ */
 
+
+
+
+
+/*
+ *
+ * TYPOGRAPHY
+ *
+ */
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 12px
+	line-height: 1.2em;
+
+}
 
 
 
