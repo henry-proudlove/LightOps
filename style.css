@@ -102,8 +102,14 @@ body{
 	color: #797e7c;
 }
 
-#site-title{
-	background: url('img/site-title.png') top left;
+h1{
+	margin: 0;
+	padding: 0;
+}
+
+#site-title a{
+	background-image: url('img/site-title.png'), url('img/site-title-bg.jpg');
+	background-position: top left, 1px top;
 	width: 422px;
 	height: 114px;
 	text-indent: -9000px;
@@ -128,7 +134,7 @@ body{
 
 #site-navigation a{
 	display: inline-block;
-	background: black url('img/nav-stroke.png') right bottom;
+	background: #39c79e url('img/nav-stroke.png') right bottom;
 	padding-right: 15px;
 	margin-right: 4px;
 	height: 15px;
@@ -194,7 +200,7 @@ body{
 }
 
 .sec-header{
-	border-bottom: 15px solid black;
+	border-bottom: 15px solid #39c79e;
 	width: 190px;
 	padding-bottom: 0.5em;
 }
@@ -221,7 +227,7 @@ p, dl, ul{
 }
 
 #main a{
-	border-bottom: 2px solid black;
+	border-bottom: 2px solid #39c79e;
 	padding-bottom: 0.15em;
 }
 
