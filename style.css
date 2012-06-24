@@ -152,8 +152,11 @@ h1{
 	display: inline-block;
 	background: #39c79e url('img/nav-stroke.png') right bottom;
 	padding-right: 15px;
-	margin-right: 4px;
 	height: 15px;
+}
+
+#site-navigation a.current{
+	color: #484f4d;
 }
 
 #social-links a{
@@ -255,6 +258,10 @@ p, dl, ul{
 	display: block;
 	float: left;
 	margin-top: 0.4em;
+}
+
+#main section.current{
+	background: red;
 }
 
 
