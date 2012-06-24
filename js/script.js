@@ -87,7 +87,10 @@ $(window).smartresize(function(){
 	$('section.last').docHeight();
 });
 
-$(window).scroll(function(){  
+$(window).scroll(function(){
+	var bPos = ($(this).scrollTop() / 4);
+	console.log(bPos);
+	$('#site-title').css('background-position-y', bPos); 
 });
 
 

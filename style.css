@@ -123,15 +123,21 @@ h1{
 
 }
 
+#site-title{
+	background-image: url('img/site-title-bg.jpg');
+	background-position: 1px top;
+	margin-top: 49px;
+	float: left;
+}
+
 #site-title a{
-	background-image: url('img/site-title.png'), url('img/site-title-bg.jpg');
-	background-position: top left, 1px top;
+	background-image: url('img/site-title.png');
+	background-color: rgba(57,199,158,0.5);
+	background-position: top left;
 	width: 422px;
 	height: 114px;
 	text-indent: -9000px;
 	float: left;
-	margin-top: 49px;
-	margin-left: -1px;
 }
 
 #nav-holder{
@@ -269,6 +275,11 @@ p, dl, ul{
 
 /* ABOUT */
 
+body.about #site-title a{
+	background-color: rgba(57,199,158,0.5);
+}
+
+
 body.about #site-navigation a:not(.last){
 	background-color: #39c79e;
 }
@@ -284,6 +295,10 @@ body.about #main a:hover {
 
 /* PROJECTS */
 
+body.projects #site-title a{
+	background-color: rgba(132,191,244,0.5);
+}
+
 body.projects #site-navigation a:not(.last){
 	background-color: #84bff4;
 }
@@ -298,6 +313,10 @@ body.projects #main a:hover {
 
 
 /* CONTACT */
+
+body.contact #site-title a{
+	background-color: rgba(255,244,99,0.7);
+}
 
 body.contact #site-navigation a:not(.last){
 	background-color: #fff463;
@@ -315,6 +334,10 @@ body.contact #main a:hover {
 
 /* JOBS */
 
+body.jobs #site-title a{
+	background-color: rgba(234,114,111,0.5);
+}
+
 body.jobs #site-navigation a:not(.last){
 	background-color: #ea726f;
 }
@@ -328,6 +351,13 @@ body.jobs #main a:hover {
 }
 
 /* TRANSITIONS FOR THESE */
+
+#site-title a{
+	transition: background-color 0.5s;
+	-webkit-transition: background-color 0.5s;
+	-moz-transition: background-color 0.5s;
+	-o-transition: background-color 0.5s;
+}
 
 #site-navigation a:not(.last){
 	transition: background-color 0.5s;
