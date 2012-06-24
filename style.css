@@ -260,10 +260,88 @@ p, dl, ul{
 	margin-top: 0.4em;
 }
 
-#main section.current{
-	background: red;
+/*
+ *
+ * 	SECTION SPECIFIC COLOURS
+ *
+ */
+
+
+/* ABOUT */
+
+body.about #site-navigation a:not(.last){
+	background-color: #39c79e;
 }
 
+body.about .sec-header, body.about #main a {
+	border-color: #39c79e;
+}
+
+body.about #main a:hover {
+	border-color: #484f4d;
+}
+
+
+/* PROJECTS */
+
+body.projects #site-navigation a:not(.last){
+	background-color: #84bff4;
+}
+
+body.projects .sec-header, body.projects #main a {
+	border-color: #84bff4;
+}
+
+body.projects #main a:hover {
+	border-color: #484f4d;
+}
+
+
+/* CONTACT */
+
+body.contact #site-navigation a:not(.last){
+	background-color: #fff463;
+}
+
+body.contact .sec-header, body.contact #main a {
+	border-color: #fff463;
+}
+
+body.contact #main a:hover {
+	border-color: #484f4d;
+}
+
+
+
+/* JOBS */
+
+body.jobs #site-navigation a:not(.last){
+	background-color: #ea726f;
+}
+
+body.jobs .sec-header, body.jobs #main a {
+	border-color: #ea726f;
+}
+
+body.jobs #main a:hover {
+	border-color: #484f4d;
+}
+
+/* TRANSITIONS FOR THESE */
+
+#site-navigation a:not(.last){
+	transition: background-color 0.5s;
+	-webkit-transition: background-color 0.5s;
+	-moz-transition: background-color 0.5s;
+	-o-transition: background-color 0.5s;
+}
+
+.sec-header, body.jobs #main a {
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+}
 
 @media only screen and (min-width: 35em) {
   

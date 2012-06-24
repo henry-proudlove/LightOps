@@ -4,7 +4,6 @@
 
 var offset = 245;
 
-
 jQuery.fn.docHeight = function(){
 	var o = $(this[0]);
 	var oMargin = (o.outerHeight(true) - o.height()) / 2;
@@ -29,28 +28,38 @@ jQuery.fn.pageNav = function(){
 }
 
 jQuery.fn.secSwitch = function(currentPos){
+
 	var o = $(this);
 	var sections = [];
+	
 	o.each(function(){
 		yPos = Math.abs($(this).offset().top - $(window).scrollTop() - offset);
 		sections.push(yPos);
 		$(this).data('yPos' , yPos);
 	});
+	
 	closestSec = Math.min.apply(null, sections);
 	activeSec = o.filter(function() { 
 		return $.data(this, "yPos") == closestSec; 
 	});
+	
 	if(activeSec.hasClass('current') == false){
+	
+		// ADD ACTIVE CLASS TO CURRENT SECTION
 		activeSec.siblings().removeClass('current');
 		activeSec.addClass('current');
+	
+		// ADDING ACTIVE SEC ID BODY AND MATCHING NAV ITEM
 		currentSec = activeSec.attr('id');
-		console.log('currentSec: ' + currentSec);
+		$('body').removeClass().addClass(currentSec);
 		currentNav = $('#site-navigation a').filter(function(index){
 			return $(this).attr('href') == '#' + currentSec;
 		});
+		
 		currentNav.siblings().removeClass('current');
 		currentNav.addClass('current');
 	}
+	
 }
 
 function animateToTarget(target){
@@ -76,6 +85,9 @@ $(document).ready(function(){
 
 $(window).smartresize(function(){  
 	$('section.last').docHeight();
+});
+
+$(window).scroll(function(){  
 });
 
 
