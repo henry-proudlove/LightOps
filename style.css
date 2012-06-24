@@ -276,7 +276,7 @@ p, dl, ul{
 /* ABOUT */
 
 body.about #site-title a{
-	background-color: rgba(57,199,158,0.5);
+	background-color: rgba(57,199,158,0.4);
 }
 
 
@@ -296,7 +296,7 @@ body.about #main a:hover {
 /* PROJECTS */
 
 body.projects #site-title a{
-	background-color: rgba(132,191,244,0.5);
+	background-color: rgba(132,191,244,0.4);
 }
 
 body.projects #site-navigation a:not(.last){
@@ -315,11 +315,11 @@ body.projects #main a:hover {
 /* CONTACT */
 
 body.contact #site-title a{
-	background-color: rgba(255,244,99,0.7);
+	background-color: rgba(255,244,99,0.6);
 }
 
 body.contact #site-navigation a:not(.last){
-	background-color: #fff463;
+	background-color: #d7ce53;
 }
 
 body.contact .sec-header, body.contact #main a {
@@ -335,7 +335,7 @@ body.contact #main a:hover {
 /* JOBS */
 
 body.jobs #site-title a{
-	background-color: rgba(234,114,111,0.5);
+	background-color: rgba(234,114,111,0.4);
 }
 
 body.jobs #site-navigation a:not(.last){

@@ -88,8 +88,7 @@ $(window).smartresize(function(){
 });
 
 $(window).scroll(function(){
-	var bPos = ($(this).scrollTop() / 4);
-	console.log(bPos);
+	var bPos = ($(this).scrollTop() / 8);
 	$('#site-title').css('background-position-y', bPos); 
 });
 
