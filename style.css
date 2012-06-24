@@ -231,6 +231,10 @@ p, dl, ul{
 	padding-bottom: 0.15em;
 }
 
+#main a:hover{
+	border-color: #484f4d;
+}
+
 .phone-link{
 	display: block;
 	float: left;
