@@ -73,9 +73,10 @@ td { vertical-align: top; }
 
  
 #container{
-	width: 880px;
+	max-width: 1000px;
+	width: 92%;
 	margin: 0 auto;
-	padding: 0 40px;
+	padding: 0 4%;
 }
 
 #main{
@@ -102,7 +103,8 @@ h1{
 #site-header{
 
 	position: fixed;
-	width: 880px;
+	max-width: 1000px;
+	width: 92%;
 	height: 250px;
 	/* IE10 Consumer Preview */ 
 	background-image: -ms-linear-gradient(top, #FFFFFF 80%, rgba(255,255,255,0) 100%);
@@ -151,8 +153,8 @@ h1{
 	text-transform: uppercase;
 }
 
-#site-navigation{
-	padding-top: 23px;
+#site-navigation {
+	padding-top: 50px;
 }
 
 #site-navigation a{
@@ -164,6 +166,12 @@ h1{
 
 #site-navigation a.current{
 	color: #484f4d;
+}
+
+#social-links {
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 
 #social-links a{
@@ -227,7 +235,7 @@ h1{
 
 .sec-header{
 	border-bottom: 15px solid #39c79e;
-	width: 190px;
+	width: 20%;
 	padding-bottom: 0.5em;
 }
 
@@ -237,12 +245,14 @@ p, li, dd, dt{
 	line-height: 1.5em;
 }
 
+
 li, dd{
-	width: 420px;
+	width: 44%;
 	list-style: none;
 	float: left;
 	font-size: 1.83em;
 	background: url('img/li-border.gif') no-repeat top left;
+	background-size: 45.54% 1px;
 	padding: 1em 0;
 	margin: 1em 40px 0 0;
 }
@@ -378,9 +388,89 @@ body.jobs #main a:hover {
 	-o-transition: 0.5s;
 }
 
-@media only screen and (min-width: 35em) {
+@media only screen and (max-width: 768px) {
+  #nav-holder{
+  	float: none;
+  	text-align: left;
+  }
+  #site-navigation{
+  	padding-top: 30px;
+  }
   
+  #site-header{
+  	height: 265px;
+  }
+  
+  .sec-header{
+  	width: 44%;
+  }
+  li, dd{
+  	background-size: 100% 1px;
+  }
 
+}
+
+@media only screen and (max-width: 420px) {
+	body{
+		font-size: 12px;
+	}
+	
+	p, li, dd, dt {
+		font-weight: 300;
+		font-size: 1.7em;
+		line-height: 1.5em;
+	}
+	
+	li, dd {
+		font-weight: 300;
+		font-size: 1.4em;
+		line-height: 1.5em;
+	}
+	
+	#site-header{
+		position: static;
+		width: 100%;
+		height: auto;
+	}
+	
+	#social-links{
+		right: 10%;
+	}
+	
+	#main{
+		padding-top: 0;
+	}
+	
+	#main > section{
+		margin: 40px 0;
+	}
+	
+	#site-title a{
+		background: url('img/site-title-static.png') no-repeat;
+		background-size: 100% auto;
+		width: 100%;
+		padding-top: 27%;
+		height: 0;
+	}
+	
+	#site-title{
+		background: transparent;
+		width: 100%;
+	}
+	
+	li, dd{
+  		width: 100%;
+  		margin-right: 0;
+	}
+	
+	li.last, dd.last{
+  		margin-top: 0;
+	}
+	
+	#container{
+		width: 80%;
+	}
+	
 }
 
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
