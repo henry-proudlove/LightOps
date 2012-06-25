@@ -73,8 +73,9 @@ td { vertical-align: top; }
 
  
 #container{
-	width: 940px;
+	width: 880px;
 	margin: 0 auto;
+	padding: 0 40px;
 }
 
 #main{
@@ -101,7 +102,7 @@ h1{
 #site-header{
 
 	position: fixed;
-	width: 940px;
+	width: 880px;
 	height: 250px;
 	/* IE10 Consumer Preview */ 
 	background-image: -ms-linear-gradient(top, #FFFFFF 80%, rgba(255,255,255,0) 100%);
@@ -232,7 +233,7 @@ h1{
 
 p, li, dd, dt{
 	font-weight: 300;
-	font-size: 2.25em;
+	font-size: 2.2em;
 	line-height: 1.5em;
 }
 
@@ -244,6 +245,10 @@ li, dd{
 	background: url('img/li-border.gif') no-repeat top left;
 	padding: 1em 0;
 	margin: 1em 40px 0 0;
+}
+
+li.last, dd.last{
+	margin-right: 0;
 }
 
 p, dl, ul{
