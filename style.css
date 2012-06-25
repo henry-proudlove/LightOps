@@ -71,9 +71,13 @@ td { vertical-align: top; }
 
 .chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
 
- 
+
+html{
+	overflow-y: hidden;
+}
+
 #container{
-	max-width: 1000px;
+	max-width: 880px;
 	width: 92%;
 	margin: 0 auto;
 	padding: 0 4%;
@@ -131,7 +135,7 @@ h1{
 #site-header{
 
 	position: fixed;
-	max-width: 1000px;
+	max-width: 880px;
 	width: 92%;
 	height: 250px;
 	/* IE10 Consumer Preview */ 
@@ -182,6 +186,7 @@ h1{
 }
 
 #site-navigation {
+	display: block;
 	padding-top: 50px;
 }
 
@@ -292,6 +297,10 @@ li.last, dd.last{
 p, dl, ul{
 	padding: 0;
 	margin: 0.1em 0;
+}
+
+dd span{
+	display:block;	
 }
 
 #main a{
@@ -423,6 +432,7 @@ body.jobs #main a:hover {
   }
   #site-navigation{
   	padding-top: 30px;
+  	display: block;
   }
   
   #site-header{
@@ -438,7 +448,7 @@ body.jobs #main a:hover {
 
 }
 
-@media only screen and (max-width: 465px) {
+@media only screen and (max-width: 640px) {
 	body{
 		font-size: 12px;
 	}
@@ -498,10 +508,18 @@ body.jobs #main a:hover {
 	#container{
 		width: 80%;
 	}
+	
 	#site-navigation{
 		display: none;
 	}
 	
+	section.last{
+		margin-bottom: 80px;
+	}
+	
+	.phone-link{
+		margin-bottom: 0.4em;
+	}
 }
 
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }

@@ -85,7 +85,7 @@ function animateToTarget(target){
 }
 
 function jsMediaQuery(){
-	if (window.matchMedia("(min-width: 465px)").matches) {
+	if (window.matchMedia("(min-width: 640px)").matches) {
 		$('#main > section').secSwitch();
 		$(window).bind('scrollstop', function(){
 			$('#main > section').secSwitch();
@@ -100,18 +100,18 @@ function jsMediaQuery(){
 			var bPos = ($(this).scrollTop() / 8);
 			$('#site-title').css('background-position-y', bPos); 
 		});
+		$('#main > section.last').docHeight();
+		$('#site-navigation a').pageNav();
 	}
 }
 
 $(document).ready(function(){
 	jsMediaQuery();
-	$('#main > section.last').docHeight();
-	$('#site-navigation a').pageNav();
+	
 });
 
 $(window).smartresize(function(){
 	jsMediaQuery();
-	$('section.last').docHeight();
 });
 
 
