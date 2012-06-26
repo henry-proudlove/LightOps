@@ -71,11 +71,6 @@ td { vertical-align: top; }
 
 .chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
 
-
-html{
-	overflow-y: hidden;
-}
-
 #container{
 	max-width: 880px;
 	width: 92%;
@@ -449,6 +444,11 @@ body.jobs #main a:hover {
 }
 
 @media only screen and (max-width: 640px) {
+	
+	#container{
+		overflow-x: hidden;
+	}
+	
 	body{
 		font-size: 12px;
 	}
@@ -466,13 +466,13 @@ body.jobs #main a:hover {
 	}
 	
 	#site-header{
-		position: static;
+		position: relative;
 		width: 100%;
 		height: auto;
 	}
 	
 	#social-links{
-		right: 10%;
+		right: 0;
 	}
 	
 	#main{
